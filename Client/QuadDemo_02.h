@@ -1,4 +1,6 @@
 #pragma once
+#include "IExecute.h"
+#include "Geometry.h"
 
 class QuadDemo : public IExecute
 {
@@ -9,6 +11,7 @@ public:
 
 private:
 	shared_ptr<Shader>			_shader;
-	vector<VertexData>			_vertices;
+	shared_ptr<Geometry<VertexColorData>>	_geometry;
 	shared_ptr<VertexBuffer>	_vertexBuffer;
+	shared_ptr<IndexBuffer>		_indexBuffer;
 };
