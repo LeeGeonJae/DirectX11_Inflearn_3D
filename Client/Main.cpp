@@ -1,11 +1,15 @@
 #include "pch.h"
 #include "Main.h"
 #include "Engine/Game.h"
-#include "TriangleDemo_01.h"
-#include "QuadDemo_02.h"
-#include "ConstantBuffer_03.h"
-#include "CameraDemo_04.h"
-#include "TextureDemo_05.h"
+#include "01. TriangleDemo.h"
+#include "02. QuadDemo.h"
+#include "03. ConstantBuffer.h"
+#include "04. CameraDemo.h"
+#include "05. TextureDemo.h"
+#include "06. SamplerDemo.h"
+#include "07. HeightMap.h"
+#include "08. NormalDemo.h"
+#include "09. MeshDemo.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine, int nShowCmd)
 {
@@ -16,8 +20,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 	desc.hWnd = NULL;
 	desc.width = 800;
 	desc.height = 600;
-	desc.clearColor = Color(0.5, 0.5, 0.5, 0.5);
-	desc.app = make_shared<TextureDemo>();
+	desc.clearColor = Color(0.5f, 0.5f, 0.5f, 0.5);
+	desc.app = make_shared<MeshDemo>();
 
 	GAME->Run(desc);
 
