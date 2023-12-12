@@ -7,7 +7,7 @@
 
 void GlobalTestDemo::Init()
 {
-	_shader = make_shared<Shader>(L"09. GlobalTestDemo.fx");
+	auto shader = make_shared<Shader>(L"09. GlobalTest.fx");
 
 	// Camera
 	_camera = make_shared<GameObject>();
@@ -21,7 +21,6 @@ void GlobalTestDemo::Init()
 	_object->GetOrAddTransform();
 	_object->AddComponent(make_shared<MeshRenderer>());
 	{
-		auto shader = make_shared<Shader>(L"07. Normal.fx");
 		_object->GetMeshRenderer()->SetShader(shader);
 	}
 	{

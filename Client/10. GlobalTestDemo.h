@@ -10,8 +10,6 @@ public:
 	void Render() override;
 
 private:
-	shared_ptr<Shader>		_shader;
-
 	// Object
 	shared_ptr<GameObject>	_object;
 	shared_ptr<GameObject>	_camera;

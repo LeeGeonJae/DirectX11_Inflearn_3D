@@ -19,8 +19,7 @@ cbuffer TransformBuffer
 
 float3 LightDir;
 
-// ÅØ½ºÃÄ
-Texture2D Texture0;
+
 
 ////////////////
 // VertexData //

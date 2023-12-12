@@ -26,7 +26,7 @@ void MeshRenderer::Update()
 	_shader->GetMatrix("View")->SetMatrix((float*)&Camera::S_MatView);
 	_shader->GetMatrix("Projection")->SetMatrix((float*)&Camera::S_MatProjection);
 	_shader->GetSRV("Texture0")->SetResource(_texture->GetComPtr().Get());
-	
+	 
 	// TEMP
 	Vec3 lightDir = {0.f, 0.f, 1.f};
 	_shader->GetVector("LightDir")->SetFloatVector((float*)&lightDir);
